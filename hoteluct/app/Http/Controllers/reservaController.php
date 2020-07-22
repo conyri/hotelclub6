@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\est_resv;
+use App\Reserva;
 use Illuminate\Http\Request;
 
-class esta_resvsController extends Controller
+class reservaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,9 @@ class esta_resvsController extends Controller
     public function index()
     {
         //
-        $datos['est_resv']=est_resv::all();
+        $datos['reserva']=reserva::all();
 
-        return view('est_resv.index',$datos);
+        return view('reserva.index',$datos);
     }
 
     /**
@@ -27,9 +27,8 @@ class esta_resvsController extends Controller
     public function create()
     {
         //
-        return view('est_resv.create');
+        return view('reserva.create');
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -39,12 +38,11 @@ class esta_resvsController extends Controller
     public function store(Request $request)
     {
         //
-        $datosest_resv=request()-> except('_token');
+        $datosreserva=request()-> except('_token');
 
-        est_resv::insert($datosest_resv);
+        reserva::insert($datosreserva);
 
-        //return response()->json($datoshabitaciones);
-        return redirect('est_resv');
+        return redirect('reserva');
     }
 
     /**
@@ -67,9 +65,9 @@ class esta_resvsController extends Controller
     public function edit($id)
     {
         //
-        $est_resv =est_resv::findOrFail($id);
+        $reserva =reserva::findOrFail($id);
 
-        return view('est_resv.edit',compact('est_resv'));
+        return view('reserva.edit',compact('reserva'));
     }
 
     /**
@@ -82,11 +80,11 @@ class esta_resvsController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $datosest_resv=request()-> except(['_token','_method']);
-        est_resv::where ('id','=',$id)->update($datosest_resv);
+        $datosreserva=request()-> except(['_token','_method']);
+        reserva::where ('id','=',$id)->update($datosreserva);
 
-        $est_resv =est_resv::findOrFail($id);
-        return redirect('est_resv');
+        $reserva =reserva::findOrFail($id);
+        return redirect('reserva');
     }
 
     /**
@@ -98,8 +96,8 @@ class esta_resvsController extends Controller
     public function destroy($id)
     {
         //
-        est_resv::destroy($id);
+        reserva::destroy($id);
 
-        return redirect('est_resv');
+        return redirect('reserva');
     }
 }

@@ -21,7 +21,7 @@ Route::resource('habitaciones', 'habitacionesController');
 Route::resource('cotizacion', 'cotizacionController');
 Route::resource('est_resv', 'esta_resvsController');
 Route::resource('servicio', 'serviciosController');
-
+Route::resource('reserva', 'reservaController');
 
 Auth::routes();
 
@@ -45,3 +45,5 @@ Route::get('/restaurant', function () {
 Route::get('/principaladmin', function () {
     return view('principaladmin');
 });
+
+

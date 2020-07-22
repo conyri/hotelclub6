@@ -115,7 +115,8 @@
                 <a href="/cotizacion">COTIZACION</a> 
                 <a href="/est_resv">ESTADO DE RESERVAS</a>  
                 <a href="/habitaciones">HABITACIONES</a> 
-                <a href="/servicio">SERVICIOS</a>            
+                <a href="/servicio">SERVICIOS</a>
+                <a href="/reserva">RESERVA</a>           
             </div>    
         
     </body>
