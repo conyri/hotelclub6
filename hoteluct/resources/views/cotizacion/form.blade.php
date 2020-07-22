@@ -28,4 +28,4 @@
 <input type="text" name="adm" id="adm" value="{{isset($cotizacion->adm)? $cotizacion->adm:'' }}">
 <br>
 <input type="submit" value="{{$Modo=='crear' ? 'Agregar ':'Modificar '}}">
-<a href="{{ url ('habitaciones')}}">Regresar</a>
+<a href="{{ url ('cotizacion')}}">Regresar</a>

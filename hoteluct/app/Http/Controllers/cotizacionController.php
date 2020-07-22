@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\cotizacion;
+use App\habitaciones;
 use Illuminate\Http\Request;
 
 class cotizacionController extends Controller
@@ -14,7 +15,7 @@ class cotizacionController extends Controller
     public function index()
     {
         //
-        $datos['cotizacion']=cotizacion::paginate(5);
+        $datos['cotizacion']=cotizacion::all();
 
         return view('cotizacion.index',$datos);
     }
@@ -27,7 +28,8 @@ class cotizacionController extends Controller
     public function create()
     {
         //
-        return view('cotizacion.create');
+        $habitaciones=habitaciones::all();
+        return view('cotizacion.create',compact('habitaciones'));
     }
 
     /**

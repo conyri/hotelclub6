@@ -15,7 +15,7 @@ class habitacionesController extends Controller
     public function index()
     {
         
-        $datos['habitaciones']=habitaciones::paginate(5);
+        $datos['habitaciones']=habitaciones::all();
 
         return view('habitaciones.index',$datos);
     }
