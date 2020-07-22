@@ -22,3 +22,7 @@ Route::resource('cotizacion', 'cotizacionController');
 Route::resource('est_resv', 'esta_resvsController');
 Route::resource('servicio', 'serviciosController');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
