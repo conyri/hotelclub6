@@ -81,7 +81,7 @@
     </head>
     <body>
         <div class="top-right1 ">
-        <a href="/principaladmin">adminitrador</a>
+        <a href="/">INICIO</a>
         </div>
         
         <div class=" full-height flex-center">
@@ -111,12 +111,11 @@
         <br>
         <br>
         <br>   
-            <div class="links flex-center ">                                                            
-                <a href="/habitacion">Habitacion</a>
-                <a href="/restaurant">RESTAURANT</a> 
-                <a href="/eventos">EVENTOS Y SALONES</a>  
-                <a href="/fitnessclub">FITNESS CLUB</a> 
-                <a href="/promociones">PROMOCIONES </a>            
+            <div class="links flex-center ">                                                            >
+                <a href="/cotizacion">COTIZACION</a> 
+                <a href="/est_resv">ESTADO DE RESERVAS</a>  
+                <a href="/habitaciones">HABITACIONES</a> 
+                <a href="/servicio">SERVICIOS</a>            
             </div>    
         
     </body>
