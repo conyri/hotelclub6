@@ -40,14 +40,18 @@
                 position: absolute;
                 right: 10px;
                 top: 18px;
+                text-decoration: none;
             }
             .top-right1 {
                 position: absolute;
                 right: 1400px;
                 top: 18px;
                 border: 3px black groove;
-                background-color: #D8E04F;
-                text-transform: uppercase
+                background-color: #E12200;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase; 
+                
             }
 
             .content {
@@ -66,9 +70,9 @@
                 padding: 0 25px;
                 font-size: 25px;
                 font-weight: 600;
-                letter-spacing: .1rem;
+               letter-spacing: .1rem;
                 text-decoration: none;
-                text-transform: uppercase;         
+                text-transform: uppercase;        
                 border: 3px black groove;
                 background-color: #D8E04F;
             }
@@ -81,7 +85,7 @@
     </head>
     <body>
         <div class="top-right1 ">
-        <a href="/principaladmin">adminitrador</a>
+        <a href="/principaladmin" >Panel ADM</a>
         </div>
         
         <div class=" full-height flex-center">
