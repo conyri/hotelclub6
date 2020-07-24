@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Reserva;
+use App\habitaciones;
+use App\servicio;
 use Illuminate\Http\Request;
 
 class reservaController extends Controller
@@ -27,7 +29,10 @@ class reservaController extends Controller
     public function create()
     {
         //
-        return view('reserva.create');
+        $habitaciones=habitaciones::all();
+        $servicio=servicio::all();
+        return view('reserva.create',compact('habitaciones','servicio'));
+        
     }
     /**
      * Store a newly created resource in storage.

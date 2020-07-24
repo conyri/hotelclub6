@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\est_resv;
+use App\Reserva;
 use Illuminate\Http\Request;
 
 class esta_resvsController extends Controller
@@ -27,7 +28,8 @@ class esta_resvsController extends Controller
     public function create()
     {
         //
-        return view('est_resv.create');
+        $reserva=reserva::all();
+        return view('est_resv.create',compact('reserva'));
     }
 
     /**

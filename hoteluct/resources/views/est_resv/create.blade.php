@@ -51,7 +51,37 @@
 <form action="{{'/est_resv'}}" method="post" enctype="multipart/form-data" >
 {{csrf_field()}}
 
-@include('est_resv.form',['Modo'=>'crear'])
+<div id="contact">
+<fieldset >
+<div id="lateral">
+<label for="reserva">reserva</label>
+<select id="reserva" class="form-control" name="reserva">
+        @foreach($reserva as $rev)
+            <option value="{{$rev['id']}}">{{$rev['id']}}</option>
+        @endforeach
+</select>
+</div>
+</fieldset>
+<br>
+<div class="lateral">
+  <label for="estado">{{'estado'}}</label>
+  <select id="estado" class="form-control" name="estado" >
+  <option>cancelado</option>  
+  <option>reservado</option>
+  <option>vencida</option>
+  </select>
+</div>
+<br>
+<fieldset>
+<label for="admin">{{'admin'}}</label>
+<input type="text" name="admin" id="admin" value="">
+</fieldset>
+<br>
+<fieldset>
+<input type="submit" value="Enviar" class="btn btn-primary" role="button">
+<a href="{{ url ('est_resv')}}" class="btn btn-success mt-0 ml-0" role="button">Regresar</a>
+</fieldset>
+</div>
 
 </form>
 
