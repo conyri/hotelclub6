@@ -78,9 +78,11 @@
 <div id="lateral">
 <label for="tipo_hab">tipo_hab</label>
 <select id="tipo_hab" class="form-control" name="tipo_hab">
-        @foreach($habitaciones as $hab)
-            <option value="{{$hab['tipo']}}">{{$hab['tipo']}}</option>
-        @endforeach
+    <option>Junior Suite</option>  
+    <option>Superior King</option>
+    <option>Superior Twin</option>
+    <option>Standard King</option>
+    <option>Standard Twin</option>
     </select>
 </div>
 </fieldset>

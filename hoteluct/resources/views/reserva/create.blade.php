@@ -32,17 +32,6 @@
 	    $("#total1").val(importe_total);
 	};
 
-    function fecha() {
-        importe_total = 0
-	    $(".importen").each(
-		    function(index, value) {
-                importe_total1 = importe_total1 + eval($(this).val());
-		    }
-	    );
-	    $("#total2").val(importe_total1);
-	};
-
-
     </script>
   <style>
             html, body {

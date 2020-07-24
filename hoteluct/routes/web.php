@@ -46,4 +46,20 @@ Route::get('/principaladmin', function () {
     return view('principaladmin');
 });
 
+Route::get('/uno', function () {
+    return view('uno');
+});
+Route::get('/dos', function () {
+    return view('dos');
+});
+Route::get('/tres', function () {
+    return view('tres');
+});
+Route::get('/cuatro', function () {
+    return view('cuatro');
+});
+Route::get('/cinco', function () {
+    return view('cinco');
+});
+
 
