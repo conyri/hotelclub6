@@ -89,7 +89,7 @@
 
 
 </table>
-<a href="{{ url ('cotizacion/create')}}" type="button" class="btn btn-success mt-0 ml-0">AGREGAR</a>
+<a href="{{ url ('coti2/create')}}" type="button" class="btn btn-success mt-0 ml-0">AGREGAR</a>
 
 <a class="btn btn-primary" href="/principaladmin" role="button">ATRAS</a>
 

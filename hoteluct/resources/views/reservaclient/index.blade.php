@@ -83,9 +83,11 @@
 
 
 </table>
-<a href="{{ url ('reserva/create')}}" type="button" class="btn btn-success mt-0 ml-0">AGREGAR</a>
 
-<a class="btn btn-primary" href="/principaladmin" role="button">ATRAS</a>
+
+<a href="{{ url ('reserva2/create')}}" type="button" class="btn btn-success mt-0 ml-0">AGREGAR</a>
+
+<a class="btn btn-primary" href="/home" role="button">ATRAS</a>
 </div> 
 </body>
 </html>
