@@ -31,6 +31,16 @@
 	    );
 	    $("#total1").val(importe_total);
 	};
+    function resta() {
+        importe_total = 0
+	    $(".importem").each(
+		    function(index, value) {
+			    importe_total = $('#total').val() - $('#resta1').val();
+
+		    }
+	    );
+	    $("#total2").val(importe_total);
+	};
 
     </script>
   <style>
@@ -88,9 +98,10 @@
 <label for="N_hab">{{'N_hab'}}</label>
 <select id="N_hab" class="form-control" name="N_hab">
         @foreach($habitaciones as $hab)
-            <option value="{{$hab['id']}}">{{$hab['id']}}</option>
+            <option value="{{$hab['id']}}">{{$hab['id']}},{{$hab['tipo']}},per.{{$hab['cant_p']}}</option>
         @endforeach
 </select>
+(n°habitacion, tipo , cantidad de personas)
 </div>
 </fieldset>
 <br>
@@ -110,11 +121,11 @@
 </fieldset>
 <br>
 <fieldset >
-<div id="lateral">
+<div id="lateral lineas">
 <label for="servicios">{{'servicios'}}</label>
-<select id="servicios" class="form-control" name="servicios">
+<select id="servicios" class="form-control importe_linea" name="servicios">
         @foreach($servicio as $ser)
-            <option value="{{$ser['nombre']}}">{{$ser['nombre']}}</option>
+            <option value="{{$ser['Preciodia_S']}}">{{$ser['nombre']}},valor {{$ser['Preciodia_S']}}  </option>
         @endforeach
 </select>
 </div>
@@ -125,7 +136,7 @@
 <label for="costo_dia">{{'costo_dia'}}</label>
 <select id="valor2" class="form-control importe" name="costo_dia" >
         @foreach($habitaciones as $hab)
-            <option value="{{$hab['precio_dia']}}" >{{$hab['precio_dia']}}</option>
+            <option value="{{$hab['precio_dia']}}" >{{$hab['precio_dia']}},habitacion {{$hab['id']}}</option>
         @endforeach
 </select>
 </div>
@@ -139,13 +150,18 @@
 <br>
 <fieldset>
 <label for="descuento">{{'descuento'}}</label>
-<input type="text" name="descuento" id="descuento" value="0" class="importe_linea">
+<input type="text" name="descuento" id="resta1" value="0" class="importem">
 </fieldset>
 <br>
 <fieldset>
 <label for="costobruto">{{'costobruto'}}</label>
-<input type="text" name="costobruto" id="total" value="0">
+<input type="text" name="costobruto" id="total" value="0" class="importem  importe_linea">
 <input type="button" value="Calcular" onclick="calcular_total()"/>
+costo bruto incluye el valor de los servicios adicionales que quiere agregar pero sin descuento
+<br>
+<input type="text" name="costobruto" id="total2" value="0">
+<input type="button" value="total a pagar" onclick="resta()"/>
+
 </fieldset>
 <br>
 <fieldset>

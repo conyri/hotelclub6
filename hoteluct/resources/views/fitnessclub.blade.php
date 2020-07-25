@@ -95,5 +95,47 @@
                 <a href="/habitacion">HABITACIONES</a>             
             </div>    
         
+            <table class="egt">
+                <tr>
+                <td><img width="700" height="500" src="/imagenes/s1.jpg"  /></td>
+                </tr>
+                <tr>
+                <td><font color="black" ><p ><h1>Capacitaciones y Seminarios</h1> <br>Nuestros espacios para eventos ofrecen la última tecnología<br>
+                 junto a servicios de organización y de comidas personalizados.</p></font>
+                 <a href="/" class="button" >  MAS INFORMACION </a>
+                 </td>
+                </tr>
+                <tr>
+                <td>  <br> </td>
+                </tr>
+                <tr>
+                <td><img width="700" height="500" src="/imagenes/s2.jpg"  /></td>
+                </tr>
+                <br><br>
+                <tr>
+                <td><font color="black" ><p ><h1>Fiestas & Celebraciones</h1> <br>Permítanos personalizar su celebración mediante la decoración, música, cocteles y 
+                <br>comidas; todo de acuerdo con sus necesidades. </p></font>
+                 <a href="/" class="button" >  MAS INFORMACION </a>
+                 </td>
+                </tr>
+                <tr>
+                <td><img width="700" height="500" src="/imagenes/s3.jpg"  /></td>
+                </tr>
+                <br><br>
+                <tr>
+                <td><font color="black" ><p ><h1>Matrimonios</h1> <br>Planea en nuestro Hotel la fiesta de matrimonio que siempre soñaste, Somos la 
+                <br>combinación perfecta de elegancia, excelencia, calidad, servicio personalizado y 
+                <br>precio.​ </p></font>
+                 <a href="/" class="button" >  MAS INFORMACION </a>
+                 </td>
+                </tr>
+                <tr>
+                <td>  <br> <br> <br> </td>
+                </tr>
+
+                
+
+            </table>
+        
     </body>
 </html>
