@@ -17,12 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/' , function () { return view('welcome'); });
 
 
-Route::resource('habitaciones', 'habitacionesController');
-Route::resource('cotizacion', 'cotizacionController');
-Route::resource('est_resv', 'esta_resvsController');
-Route::resource('servicio', 'serviciosController');
-Route::resource('reserva', 'reservaController');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -30,6 +24,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/habitacion', function () {
     return view('habitacion');
 });
+
 Route::get('/eventos', function () {
     return view('eventos');
 });
@@ -39,9 +34,6 @@ Route::get('/fitnessclub', function () {
 
 Route::get('/restaurant', function () {
     return view('restaurant');
-});
-Route::get('/principaladmin', function () {
-    return view('principaladmin');
 });
 
 Route::get('/uno', function () {
@@ -60,4 +52,32 @@ Route::get('/cinco', function () {
     return view('cinco');
 });
 
+Route::group(['middleware' => ['role:cliente']], function () {
+    
+    
+    Route::resource('reserva2', 'reserva2Controller');
+    Route::resource('coti2', 'cotizacion2Controller');
+  
+});
+
+
+Route::group(['middleware' => ['role:admin']], function () {
+    
+
+    Route::get('/principaladmin', function () {
+        return view('principaladmin');
+    });
+
+   
+
+
+Route::resource('habitaciones', 'habitacionesController');
+Route::resource('cotizacion', 'cotizacionController');
+Route::resource('est_resv', 'esta_resvsController');
+Route::resource('servicio', 'serviciosController');
+Route::resource('reserva', 'reservaController');
+
+
+
+});
 
