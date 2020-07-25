@@ -13,6 +13,7 @@
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/' , function () { return view('welcome'); });
 
@@ -57,6 +58,10 @@ Route::group(['middleware' => ['role:cliente']], function () {
     
     Route::resource('reserva2', 'reserva2Controller');
     Route::resource('coti2', 'cotizacion2Controller');
+
+Route::get('/principaladmin', function () {
+    return view('principaladmin');
+});
   
 });
 
