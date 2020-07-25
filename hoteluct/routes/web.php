@@ -36,9 +36,7 @@ Route::get('/eventos', function () {
 Route::get('/fitnessclub', function () {
     return view('fitnessclub');
 });
-Route::get('/promociones', function () {
-    return view('promociones');
-});
+
 Route::get('/restaurant', function () {
     return view('restaurant');
 });

@@ -39,7 +39,7 @@
 
             .top-right {
                 position: absolute;
-                right: 210px;
+                right: 350px;
                 top: 380px;
             }
 
@@ -119,8 +119,7 @@
             <div class="links flex-center top-right ">                                                            
                 <a href="/restaurant">RESTAURANT</a> 
                 <a href="/eventos">EVENTOS Y SALONES</a>  
-                <a href="/fitnessclub">FITNESS CLUB</a> 
-                <a href="/promociones">PROMOCIONES </a>            
+                <a href="/fitnessclub">SERVICIOS</a>         
             </div>
             <strong><font color="black" size="4px" align="center" > <h1 >Hermosas habitaciones y suites amuebladas</h1> </font></strong>
 

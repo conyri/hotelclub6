@@ -119,8 +119,7 @@
                 <a href="/habitacion">Habitacion</a>
                 <a href="/restaurant">RESTAURANT</a> 
                 <a href="/eventos">EVENTOS Y SALONES</a>  
-                <a href="/fitnessclub">FITNESS CLUB</a> 
-                <a href="/promociones">PROMOCIONES </a>            
+                <a href="/fitnessclub">SERVICIOS</a>          
             </div>    
         
     </body>

@@ -39,7 +39,7 @@
 
             .top-right {
                 position: absolute;
-                right: 250px;
+                right: 350px;
                 top: 380px;
             }
 
@@ -116,8 +116,7 @@
             <div class="links flex-center top-right ">                                                            
                 <a href="/habitacion">HABITACIONES</a> 
                 <a href="/eventos">EVENTOS Y SALONES</a>  
-                <a href="/fitnessclub">FITNESS CLUB</a> 
-                <a href="/promociones">PROMOCIONES </a>            
+                <a href="/fitnessclub">SERVICIOS</a>            
             </div>
 
             <table class="egt">

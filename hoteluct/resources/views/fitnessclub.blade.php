@@ -38,7 +38,7 @@
 
             .top-right {
                 position: absolute;
-                right: 100px;
+                right: 350px;
                 top: 380px;
             }
 
@@ -92,8 +92,7 @@
             <div class="links flex-center top-right ">                                                            
                 <a href="/restaurant">RESTAURANT</a> 
                 <a href="/eventos">EVENTOS Y SALONES</a>  
-                <a href="/habitacion">HABITACIONES</a> 
-                <a href="/promociones">PROMOCIONES </a>            
+                <a href="/habitacion">HABITACIONES</a>             
             </div>    
         
     </body>
