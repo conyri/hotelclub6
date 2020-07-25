@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\cotizacion;
-use App\habitaciones;
-use Illuminate\Http\Request;
 
-class cotizacionController extends Controller
+use Illuminate\Http\Request;
+use App\reservasa;
+
+class reservasaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,9 @@ class cotizacionController extends Controller
     public function index()
     {
         //
-        $datos['cotizacion']=cotizacion::all();
+        $datos['reservasa']=reservasa::all();
 
-        return view('cotizacion.index',$datos);
+        return view('reservasa.index',$datos);
     }
 
     /**
@@ -28,8 +28,7 @@ class cotizacionController extends Controller
     public function create()
     {
         //
-        $habitaciones=habitaciones::all();
-        return view('cotizacion.create',compact('habitaciones'));
+        return view('reservasa.create');
     }
 
     /**
@@ -41,12 +40,12 @@ class cotizacionController extends Controller
     public function store(Request $request)
     {
         //
-        $datoscotizacion=request()-> except('_token');
+        $datosreservasa=request()-> except('_token');
 
-        cotizacion::insert($datoscotizacion);
+        reservasa::insert($datosreservasa);
 
         //return response()->json($datoshabitaciones);
-        return redirect('habitacion');
+        return redirect('reservasa');
     }
 
     /**
@@ -69,9 +68,9 @@ class cotizacionController extends Controller
     public function edit($id)
     {
         //
-        $cotizacion =cotizacion::findOrFail($id);
+        $reservasa =reservasa::findOrFail($id);
 
-        return view('cotizacion.edit',compact('cotizacion'));
+        return view('reservasa.edit',compact('reservasa'));
     }
 
     /**
@@ -84,11 +83,11 @@ class cotizacionController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $datoscotizacion=request()-> except(['_token','_method']);
-        cotizacion::where ('id','=',$id)->update($datoscotizacion);
+        $datosreservasa=request()-> except(['_token','_method']);
+        reservasa::where ('id','=',$id)->update($datosreservasa);
 
-        $cotizacion =cotizacion::findOrFail($id);
-        return redirect('cotizacion');
+        $reservasa =reservasa::findOrFail($id);
+        return redirect('reservasa');
     }
 
     /**
@@ -100,8 +99,8 @@ class cotizacionController extends Controller
     public function destroy($id)
     {
         //
-        cotizacion::destroy($id);
+        reservasa::destroy($id);
 
-        return redirect('cotizacion');
+        return redirect('reservasa');
     }
 }
