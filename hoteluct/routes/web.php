@@ -26,7 +26,6 @@ Route::get('/logout', ['uses' => 'AuthController@doLogout', 'before' => 'auth'])
 Route::get('/habitacion', function () {
     return view('habitacion');
 });
-
 Route::get('/eventos', function () {
     return view('eventos');
 });
@@ -60,9 +59,38 @@ Route::resource('servicios2', 'servicio2Controller');
 
 Route::group(['middleware' => ['role:cliente']], function () {
     
-    
+    Route::get('/paginaslog/welcome2' , function () { return view('/paginaslog/welcome2'); });
     Route::resource('reserva2', 'reserva2Controller');
     Route::resource('coti2', 'cotizacion2Controller');
+    Route::get('/paginaslog/habitacion2', function () {
+        return view('/paginaslog/habitacion2');
+    });
+    Route::get('/paginaslog/eventos2', function () {
+        return view('/paginaslog/eventos2');
+    });
+    Route::get('/paginaslog/fitnessclub2', function () {
+        return view('/paginaslog/fitnessclub2');
+    });
+    
+    Route::get('/paginaslog/restaurant2', function () {
+        return view('/paginaslog/restaurant2');
+    });
+    
+    Route::get('/paginaslog/uno2', function () {
+        return view('/paginaslog/uno2');
+    });
+    Route::get('/paginaslog/dos2', function () {
+        return view('/paginaslog/dos2');
+    });
+    Route::get('/paginaslog/tres2', function () {
+        return view('/paginaslog/tres2');
+    });
+    Route::get('/paginaslog/cuatro2', function () {
+        return view('/paginaslog/cuatro2');
+    });
+    Route::get('/paginaslog/cinco2', function () {
+        return view('/paginaslog/cinco2');
+    });
   
 });
 
