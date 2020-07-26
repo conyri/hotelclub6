@@ -1,4 +1,6 @@
+@extends('layouts.app')
 
+@section('content')
 <!doctype html>
 <html lang="en">
   <head>
@@ -88,12 +90,19 @@
 {{csrf_field()}}
 
 <div id="contact">
-<label for="rut_client">{{'rut_client'}}</label>
-<input type="text" name="rut_client" id="rut_client" value="">
+<label for="rut_client">{{'rut cliente'}}</label>
+<input type="text" name="rut_client" id="rut_client" value="{{ auth()->user()->rut }}">
 <br>
-<label for="tipo_Salon">{{'tipo_Salon'}}</label>
-<input type="text" name="tipo_Salon" id="tipo_Salon" value="">
-<br>
+<div id="lateral">
+<label for="tipo_salon">{{'tipo_salon'}}</label>
+<select id="tipo_salon" class="form-control" name="tipo_salon">
+    <option>Matrimonio</option>  
+    <option>Seminario</option>
+    <option>Reunion</option>
+    <option>Cumpleaños</option>
+    <option>Graduaciones</option>
+    </select>
+</div>
 <label for="fecha_E">{{'fecha_E'}}</label>
 <input type="date" name="fecha_E" id="fecha_E" value="">
 <br>
@@ -101,13 +110,17 @@
 <input type="date" name="fecha_S" id="fecha_S" value="">
 <br>
 <label for="dias_total">{{'dias_total'}}</label>
-<input type="text" name="dias_total" id="dias_total" value="">
+<input type="text" name="dias_total" id="valor1" value="">
 <br>
 <label for="valor_dia">{{'valor_dia'}}</label>
-<input type="text" name="valor_dia" id="valor_dia" value="">
-<br>
+<select id="valor2" class="form-control importe_linea" name="valor_dia">
+        @foreach($salones as $sal)
+            <option value="{{$sal['valor_dia']}}">{{$sal['tipo_Salon']}},valor {{$sal['valor_dia']}}  </option>
+        @endforeach
+</select>
 <label for="coto_total">{{'costo_total'}}</label>
-<input type="text" name="coto_total" id="coto_total" value="">
+<input type="text" name="coto_total" id="total1" class="importe importe_linea">
+<input type="button" value="Calcular" onclick="calcular()"/>
 <br>
 </fieldset>
 <br>
@@ -120,3 +133,6 @@
 </div>
 </body>
 </html>
+
+
+@endsection

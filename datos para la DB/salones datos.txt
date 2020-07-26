@@ -1,0 +1,5 @@
+INSERT INTO `salones` (`id`, `tipo_Salon`, `valor_dia`, `descripcion`, `created_at`, `updated_at`) VALUES (NULL, 'Matrimonio', '300000', 'Incluye mesas y sillas \r\n** sujeto a cambios**', NULL, NULL);
+INSERT INTO `salones` (`id`, `tipo_Salon`, `valor_dia`, `descripcion`, `created_at`, `updated_at`) VALUES (NULL, 'Seminario', '25000', 'Incluye mesas y sillas \r\n** sujeto a cambios**', NULL, NULL);
+INSERT INTO `salones` (`id`, `tipo_Salon`, `valor_dia`, `descripcion`, `created_at`, `updated_at`) VALUES (NULL, 'Reunion', '20000', 'Incluye mesas y sillas \r\n** sujeto a cambios**', NULL, NULL);
+INSERT INTO `salones` (`id`, `tipo_Salon`, `valor_dia`, `descripcion`, `created_at`, `updated_at`) VALUES (NULL, 'Cumpleaños', '50000', 'Incluye mesas y sillas \r\n** sujeto a cambios**', NULL, NULL);
+INSERT INTO `salones` (`id`, `tipo_Salon`, `valor_dia`, `descripcion`, `created_at`, `updated_at`) VALUES (NULL, 'Graduacion', '80000', 'Incluye mesas y sillas \r\n** sujeto a cambios**', NULL, NULL);

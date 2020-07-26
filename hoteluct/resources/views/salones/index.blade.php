@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <!doctype html>
 <html lang="en">
   <head>
@@ -57,7 +60,9 @@
 </table>
 
 <a class="btn btn-primary" href="/cotizacion3/create" role="button">COTIZAR SALON</a>
+<a class="btn btn-primary" href="/reservasa/create" role="button">RESERVAR SALON</a>
 <a class="btn btn-primary" href="/eventos" role="button">ATRAS</a>
 </div> 
 </body>
 </html>
+@endsection

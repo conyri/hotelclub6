@@ -122,7 +122,7 @@
 <br>
 <fieldset>
 <label for="adm">{{'adm'}}</label>
-<input type="text" name="adm" id="adm" value="">
+<input type="text" name="adm" id="adm" value="{{ auth()->user()->rut }}">
 </fieldset>
 <br>
 <fieldset>

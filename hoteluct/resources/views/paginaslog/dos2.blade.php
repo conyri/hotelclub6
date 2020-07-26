@@ -126,10 +126,10 @@
             <h1>HABITACIONES</h1>               
         </div>
         <div class="links flex-center top-right ">                                                            
-                <a href="/uno">JUNIOR SUITE</a> 
-                <a href="/tres">SUPERIOR TWIN</a>  
-                <a href="/cuatro">STANDARD KING</a> 
-                <a href="/cinco">STANDARD TWIN </a>            
+                <a href="/paginaslog/uno2">JUNIOR SUITE</a> 
+                <a href="/paginaslog/tres2">SUPERIOR TWIN</a>  
+                <a href="/paginaslog/cuatro2">STANDARD KING</a> 
+                <a href="/paginaslog/cinco2">STANDARD TWIN </a>            
             </div>
 
             <table class="egt">

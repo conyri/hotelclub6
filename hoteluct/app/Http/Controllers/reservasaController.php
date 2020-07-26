@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\reservasa;
+use App\salones;
 
 class reservasaController extends Controller
 {
@@ -28,7 +29,8 @@ class reservasaController extends Controller
     public function create()
     {
         //
-        return view('reservasa.create');
+        $salones=salones::all();
+        return view('reservasa.create',compact('salones'));
     }
 
     /**
