@@ -81,7 +81,7 @@
     </head>
     <body>
         <div class="top-right1 ">
-        <a href="/">INICIO</a>
+        <a href="/paginaslog/welcome2">INICIO</a>
         </div>
         
         <div class=" full-height flex-center">
@@ -117,7 +117,7 @@
                 <a href="/habitaciones">HABITACIONES</a> 
                 <a href="/servicio">SERVICIOS</a>
                 <a href="/reserva">RESERVA</a> 
-                <a href="/home">HOME</a>          
+                <a href="/paginaslog/welcome2">INICIO</a>          
             </div>    
         
     </body>
