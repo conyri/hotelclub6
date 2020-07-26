@@ -116,8 +116,7 @@
             <div class="links flex-center top-right ">                                                            
                 <a href="/restaurant">RESTAURANT</a> 
                 <a href="/habitacion">HABITACIONES</a>  
-                <a href="/fitnessclub">SERVICIOS</a>
-                <a href="/">INICIO</a>           
+                <a href="/fitnessclub">SERVICIOS</a>           
             </div>  
             <table class="egt">
                 <tr>
@@ -141,6 +140,9 @@
                 <br>comidas; todo de acuerdo con sus necesidades. </p></font>
                  <a href="/salones" class="button" >  MAS INFORMACION </a>
                  </td>
+                </tr>
+                <tr>
+                <td>  <br> </td>
                 </tr>
                 <tr>
                 <td><img width="700" height="500" src="/imagenes/s3.jpg"  /></td>

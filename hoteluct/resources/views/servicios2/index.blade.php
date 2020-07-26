@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,38 +18,47 @@
                 margin: 0;
             }
             </style>
-    <title>Reservas</title>
+    <title>Servicio</title>
   </head>
-<body>
-<div class="uper"> 
-<h1>Reservas</h1>
+  <body>
+  <div class="uper"> 
+<h1>Servicios</h1>
 
-<label for="reserva">{{'Rut cliente'}}</label>
-<input type="text" name="Rut_client" id="reserva" value="{{ auth()->user()->rut }}">
-<input type="submit"  value="{{isset($reserva->Rut_client)? $reserva->Rut_client:'' }}" class="btn btn-success mt-0 ml-0" role="button">
-    
-    @foreach($reserva as $rev)
-        
+
+<table class="table table-info table-bordered">
+
+    <thead class="thead-dark">
+        <tr>
+            <th>#</th>
+            <th>Codigo</th>
+            <th>Servicio</th>
+            <th>Informacion</th>
+           <th>Precio por dia</th>
             
-        <h1 >{{$rev['Rut_client']}},valor {{$rev['costobruto']}}</h1>
+
+        </tr>
+    </thead>
+
+    <tbody>
+    @foreach($servicio as $ser)
+        <tr>
+            <td>{{$loop->iteration}}</td>
+            <td>{{$ser->Rut_serv}}</td>
+            <td>{{$ser->nombre}}</td>
+            <td>{{$ser->Descripts}}</td>
+            <td>{{$ser->Preciodia_S}}</td>
             
-            
-            
-                
-    
-    
+        </tr>
     @endforeach
- 
+    </tbody>
 
 
 
 
+</table>
 
+<a class="btn btn-primary" href="/fitnessclub" role="button">ATRAS</a>
 
-
-<a href="{{ url ('reserva2/create')}}" type="button" class="btn btn-success mt-0 ml-0">AGREGAR</a>
-
-<a class="btn btn-primary" href="/home" role="button">ATRAS</a>
 </div> 
 </body>
 </html>

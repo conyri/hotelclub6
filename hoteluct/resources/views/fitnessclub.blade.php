@@ -4,14 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>HABITACION</title>
+        <title>SERVICIOS </title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <!-- Styles -->
-        <img src="/imagenes/u0.jpg"  width="1535" height="500" />
+        <img src="/imagenes/u0.jpg"  width="1518" height="500" />
         <style>
             html, body {
+                background-color: #E9D886;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -75,6 +76,29 @@
                 border: 3px black groove;
                 background-color: #D8E04F;
             }
+            .button {
+                font: bold 13px Arial;
+                text-decoration: none;
+                background-color: #EEEEEE;
+                color: #333333;
+                padding: 10px 15px 10px 10px;
+                border-top: 1px solid #CCCCCC;
+                border-right: 1px solid #333333;
+                border-bottom: 1px solid #333333;
+                border-left: 1px solid #CCCCCC;
+            }
+            .egt{
+                position: absolute;
+                top: 590px;
+                right:400px;
+
+            }
+            .td, tr{
+                text-align: center;
+                top: 700px;
+                right:1000px;
+                
+            }
 
         </style>
     </head>
@@ -92,42 +116,63 @@
             <div class="links flex-center top-right ">                                                            
                 <a href="/restaurant">RESTAURANT</a> 
                 <a href="/eventos">EVENTOS Y SALONES</a>  
-                <a href="/habitacion">HABITACIONES</a> 
-                <a href="/">INICIO</a>            
+                <a href="/habitacion">HABITACIONES</a>             
             </div>    
-        
             <table class="egt">
                 <tr>
-                <td><img width="700" height="500" src="/imagenes/s1.jpg"  /></td>
+                <td><img width="700" height="500" src="/imagenes/spa01.jpeg"  /></td>
                 </tr>
                 <tr>
-                <td><font color="black" ><p ><h1>Capacitaciones y Seminarios</h1> <br>Nuestros espacios para eventos ofrecen la última tecnología<br>
-                 junto a servicios de organización y de comidas personalizados.</p></font>
-                 <a href="/" class="button" >  MAS INFORMACION </a>
+                <td><font color="black" ><p ><h1>Spa</h1></p></font>
+                 <a href="/servicios2" class="button" >  MAS INFORMACION </a>
                  </td>
                 </tr>
                 <tr>
                 <td>  <br> </td>
                 </tr>
                 <tr>
-                <td><img width="700" height="500" src="/imagenes/s2.jpg"  /></td>
+                <td><img width="700" height="500" src="/imagenes/p01.jpeg"  /></td>
                 </tr>
                 <br><br>
                 <tr>
-                <td><font color="black" ><p ><h1>Fiestas & Celebraciones</h1> <br>Permítanos personalizar su celebración mediante la decoración, música, cocteles y 
-                <br>comidas; todo de acuerdo con sus necesidades. </p></font>
-                 <a href="/" class="button" >  MAS INFORMACION </a>
+                <td><font color="black" ><p ><h1>Piscinas</h1> </p></font>
+                 <a href="/servicios2" class="button" >  MAS INFORMACION </a>
                  </td>
                 </tr>
                 <tr>
-                <td><img width="700" height="500" src="/imagenes/s3.jpg"  /></td>
+                <td>  <br> </td>
+                </tr>
+                <tr>
+                <td><img width="700" height="500" src="/imagenes/g01.jpeg"  /></td>
                 </tr>
                 <br><br>
                 <tr>
-                <td><font color="black" ><p ><h1>Matrimonios</h1> <br>Planea en nuestro Hotel la fiesta de matrimonio que siempre soñaste, Somos la 
-                <br>combinación perfecta de elegancia, excelencia, calidad, servicio personalizado y 
-                <br>precio.​ </p></font>
-                 <a href="/" class="button" >  MAS INFORMACION </a>
+                <td><font color="black" ><p ><h1>Gimnasio</h1> </p></font>
+                 <a href="/servicios2" class="button" >  MAS INFORMACION </a>
+                 </td>
+                </tr>
+                <tr>
+                <td>  <br> </td>
+                </tr>
+                <tr>
+                <td><img width="700" height="500" src="/imagenes/j01.jpeg"  /></td>
+                </tr>
+                <br><br>
+                <tr>
+                <td><font color="black" ><p ><h1>Juegos</h1> </p></font>
+                 <a href="/servicios2" class="button" >  MAS INFORMACION </a>
+                 </td>
+                </tr>
+                <tr>
+                <td>  <br> </td>
+                </tr>
+                <tr>
+                <td><img width="700" height="500" src="/imagenes/b01.jpg"  /></td>
+                </tr>
+                <br><br>
+                <tr>
+                <td><font color="black" ><p ><h1>Biblioteca</h1> </p></font>
+                 <a href="/servicios2" class="button" >  MAS INFORMACION </a>
                  </td>
                 </tr>
                 <tr>
@@ -136,7 +181,7 @@
 
                 
 
-            </table>
+            </table>  
         
     </body>
 </html>
