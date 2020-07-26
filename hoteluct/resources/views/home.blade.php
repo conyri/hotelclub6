@@ -40,7 +40,7 @@
                 <div class="card-header">Home</div>
                 @role('admin')
 
-                <a href="/principaladmin" class="button" >Panel ADM</a>
+                <a href="/principaladmin" class="btn btn-info" >Panel ADM</a>
                 <div class="card-body">
                     <h4>Bienvenid@  {{ auth()->user()->name }} </h4>
                     </div>
