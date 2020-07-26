@@ -117,27 +117,24 @@
     </div>   
 
         <div class="content full-height position-ref">                 
-            <h1>HOTEL CLUB UCT</h1>              
-        </div>
+            <h1>HOTEL CLUB UCT</h1>               
+        </div> 
         <div class="hab">                 
             <h1>HABITACIONES</h1>               
         </div>
-
         <div class="links flex-center top-right ">                                                            
                 <a href="/dos">SUPERIOR KING</a> 
-                <a href="/tres">SUPERIOR TWIN</a>  
+                <a href="/uno">JUNIOR SUITE</a>  
                 <a href="/cuatro">STANDARD KING</a> 
                 <a href="/cinco">STANDARD TWIN </a>            
             </div>
-
             <table class="egt">
                 <tr>
-                <td><img width="500" height="400" src="/imagenes/a01.jpg"  /></td>
+                <td><img width="500" height="400" src="/imagenes/a03.jpg"  /></td>
                 <br><br>
                 <td colspan="2"></td>
-                <td><font color="black" ><p ><h1>Junior Suite</h1> 
-                <br>    ⦁ Una cama extra grande
-                <br>    ⦁ Área de estar con dos sofás
+                <td><font color="black" ><p ><h1>Superior Twin</h1> 
+                <br>    ⦁ Dos camas extra grandes
                 <br>    ⦁ Conexión inalámbrica a internet de cortesía
                 <br>    ⦁ Servicio de habitación las 24 horas
                 <br>    ⦁ Escritorio
@@ -151,7 +148,7 @@
                 <br>    ⦁ Radio reloj
                 <br>    ⦁ Secador de cabello
                 </p></font>
-                <a href="/cotizacion/create" class="button" >  COTIZAR </a>
+                <a href="/coti2/create" class="button" >  COTIZAR </a>
                 <a href="/" class="button">INICIO</a>
                 </td>
                 </tr>
@@ -164,5 +161,3 @@
             
             </table>
     </body>
-
-

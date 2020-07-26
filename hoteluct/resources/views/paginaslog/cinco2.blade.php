@@ -118,7 +118,7 @@
 
         <div class="content full-height position-ref">                 
             <h1>HOTEL CLUB UCT</h1>              
-        </div>
+        </div> 
         <div class="hab">                 
             <h1>HABITACIONES</h1>               
         </div>
@@ -127,31 +127,27 @@
                 <a href="/dos">SUPERIOR KING</a> 
                 <a href="/tres">SUPERIOR TWIN</a>  
                 <a href="/cuatro">STANDARD KING</a> 
-                <a href="/cinco">STANDARD TWIN </a>            
+                <a href="/uno">JUNIOR SUITE </a>            
             </div>
-
             <table class="egt">
                 <tr>
-                <td><img width="500" height="400" src="/imagenes/a01.jpg"  /></td>
+                <td><img width="500" height="400" src="/imagenes/a05.jpg"  /></td>
                 <br><br>
                 <td colspan="2"></td>
-                <td><font color="black" ><p ><h1>Junior Suite</h1> 
-                <br>    ⦁ Una cama extra grande
-                <br>    ⦁ Área de estar con dos sofás
+                <td><font color="black" ><p ><h1>Standard Twin</h1> 
+                <br>    ⦁ Dos camas dobles o individuales extra grandes
                 <br>    ⦁ Conexión inalámbrica a internet de cortesía
                 <br>    ⦁ Servicio de habitación las 24 horas
-                <br>    ⦁ Escritorio
                 <br>    ⦁ Aire acondicionado automático e individual
                 <br>    ⦁ Televisión por cable
                 <br>    ⦁ Caja de seguridad
                 <br>    ⦁ Discado directo internacional
-                <br>    ⦁ Servicio de mensajería
                 <br>    ⦁ Amenidades de baño
                 <br>    ⦁ Mini bar
                 <br>    ⦁ Radio reloj
                 <br>    ⦁ Secador de cabello
                 </p></font>
-                <a href="/cotizacion/create" class="button" >  COTIZAR </a>
+                <a href="/coti2/create" class="button" >  COTIZAR </a>
                 <a href="/" class="button">INICIO</a>
                 </td>
                 </tr>
@@ -164,5 +160,4 @@
             
             </table>
     </body>
-
 

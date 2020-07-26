@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -84,24 +87,7 @@
         </style>
     </head>
     <body>
-        <div class="top-right1 ">
-        <a href="/principaladmin" >Panel ADM</a>
-        </div>
-        
-        <div class=" full-height flex-center">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/paginaslog/welcome2') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif      
+        <div class=" full-height flex-center">     
         </div>
         <br>
         <br>
@@ -116,11 +102,13 @@
         <br>
         <br>   
             <div class="links flex-center ">                                                            
-                <a href="/habitacion">Habitacion</a>
-                <a href="/restaurant">RESTAURANT</a> 
-                <a href="/eventos">EVENTOS Y SALONES</a>  
-                <a href="/fitnessclub">SERVICIOS</a>          
+                <a href="/paginaslog/habitacion2">Habitacion</a>
+                <a href="/paginaslog/restaurant2">RESTAURANT</a> 
+                <a href="/paginaslog/eventos2">EVENTOS Y SALONES</a>  
+                <a href="paginaslog/fitnessclub2">SERVICIOS</a> 
+                <a href="/home">PERFIL</a>         
             </div>    
         
     </body>
 </html>
+@endsection
