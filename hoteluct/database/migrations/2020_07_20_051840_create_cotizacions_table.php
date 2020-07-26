@@ -15,11 +15,12 @@ class CreateCotizacionsTable extends Migration
     {
         Schema::create('cotizacion', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('Rut');              
+            $table->string('Rut');             
             $table->string('nombre',40);             
             $table->string('apellido',40);
             $table->string('correo');             
-            $table->string('tipo_hab');             
+            $table->string('tipo_hab'); 
+            $table->string('tipo_salon');           
             $table->date('Fecha_E');
             $table->date('Fecha_S');
             $table->integer('cant_per');

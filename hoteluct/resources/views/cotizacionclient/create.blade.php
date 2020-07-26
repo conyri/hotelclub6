@@ -56,36 +56,51 @@
 
 <fieldset>
 <label for="Rut">{{'Rut'}}</label>
-<input type="text" disabled="disabled" name="Rut" id="Rut" value="{{ auth()->user()->rut }}">
+<input type="text"  name="Rut" id="Rut" value="{{ auth()->user()->rut }}">
 </fieldset>
 <br>
 
 <fieldset>
 <label for="nombre">{{'nombre'}}</label>
-<input type="text" disabled="disabled" name="nombre" id="nombre" value="{{ auth()->user()->name }}">
+<input type="text" name="nombre" id="nombre" value="{{ auth()->user()->name }}">
 </fieldset>
 <br>
 
 <fieldset>
 <label for="apellido">{{'apellido'}}</label>
-<input type="text" name="apellido" id="apellido" value="">
+<input type="text" name="apellido" id="apellido" value="{{ auth()->user()->apellido }}">
 </fieldset>
 <br>
 
 <fieldset>
 <label for="correo">{{'correo'}}</label>
-<input type="email" name="correo" id="correo" value="">
+<input type="email" name="correo" id="correo" value="{{ auth()->user()->email }}">
 </fieldset>
 <br>
 <fieldset >
 <div id="lateral">
 <label for="tipo_hab">tipo_hab</label>
 <select id="tipo_hab" class="form-control" name="tipo_hab">
+    <option>Ninguna</option>
     <option>Junior Suite</option>  
     <option>Superior King</option>
     <option>Superior Twin</option>
     <option>Standard King</option>
     <option>Standard Twin</option>
+    </select>
+</div>
+</fieldset>
+<br>
+<fieldset >
+<div id="lateral">
+<label for="tipo_salon">{{'tipo_salon'}}</label>
+<select id="tipo_salon" class="form-control" name="tipo_salon">
+    <option>Ninguna</option>
+    <option>Matrimonio</option>  
+    <option>Seminario</option>
+    <option>Reunion</option>
+    <option>Cumpleaños</option>
+    <option>Graduaciones</option>
     </select>
 </div>
 </fieldset>

@@ -41,6 +41,7 @@
             <th >APELLIDO</th>
             <th > CORREO</th>
             <th >TIPO DE HABITACION</th>
+            <th >TIPO DE SALON</th>
             <th >FECHA DE ENTRADA</th>
             <th >FECHA DE SALIDA</th>
             <th >PERSONAS</th>
@@ -61,6 +62,7 @@
             <td>{{$cot->apellido}}</td>
             <td>{{$cot->correo}}</td>
             <td>{{$cot->tipo_hab}}</td>
+            <td>{{$cot->tipo_salon}}</td>
             <td>{{$cot->Fecha_E}}</td>
             <td>{{$cot->Fecha_S}}</td>
             <td>{{$cot->cant_per}}</td>

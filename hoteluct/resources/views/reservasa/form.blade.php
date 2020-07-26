@@ -47,7 +47,7 @@
 <br>
 <div id="contact">
 <label for="rut_client">{{'rut_client'}}</label>
-<input type="text" name="rut_client" id="rut_client" value="{{isset($reservasa->rut_client)? $reservasa->Rut_client:'' }}">
+<input type="text" name="rut_client" id="rut_client" value="{{isset($reservasa->rut_client)? $reservasa->rut_client:'' }}">
 <br>
 <label for="tipo_Salon">{{'tipo_Salon'}}</label>
 <input type="text" name="tipo_Salon" id="tipo_Salon" value="{{isset($reservasa->tipo_Salon)? $reservasa->tipo_Salon:'' }}">

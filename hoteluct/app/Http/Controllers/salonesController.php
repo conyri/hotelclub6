@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\cotizacion;
-use App\habitaciones;
+use App\salones;
 use Illuminate\Http\Request;
 
-class cotizacionController extends Controller
+class salonesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +14,10 @@ class cotizacionController extends Controller
     public function index()
     {
         //
-        $datos['cotizacion']=cotizacion::all();
+        $datos['salones']=salones::all();
 
-        return view('cotizacion.index',$datos);
+        return view('salones.index',$datos);
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -28,8 +26,7 @@ class cotizacionController extends Controller
     public function create()
     {
         //
-        $habitaciones=habitaciones::all();
-        return view('cotizacion.create',compact('habitaciones'));
+        return view('salones.create');
     }
 
     /**
@@ -41,12 +38,12 @@ class cotizacionController extends Controller
     public function store(Request $request)
     {
         //
-        $datoscotizacion=request()-> except('_token');
+        $datossalones=request()-> except('_token');
 
-        cotizacion::insert($datoscotizacion);
+        salones::insert($datossalones);
 
         //return response()->json($datoshabitaciones);
-        return redirect('/');
+        return redirect('habitaciones');
     }
 
     /**
@@ -69,9 +66,9 @@ class cotizacionController extends Controller
     public function edit($id)
     {
         //
-        $cotizacion =cotizacion::findOrFail($id);
+        $salones =salones::findOrFail($id);
 
-        return view('cotizacion.edit',compact('cotizacion'));
+        return view('salones.edit',compact('salones'));
     }
 
     /**
@@ -84,11 +81,11 @@ class cotizacionController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $datoscotizacion=request()-> except(['_token','_method']);
-        cotizacion::where ('id','=',$id)->update($datoscotizacion);
+        $datossalones=request()-> except(['_token','_method']);
+        salones::where ('id','=',$id)->update($datossalones);
 
-        $cotizacion =cotizacion::findOrFail($id);
-        return redirect('cotizacion');
+        $salones =salones::findOrFail($id);
+        return redirect('salones');
     }
 
     /**
@@ -100,8 +97,8 @@ class cotizacionController extends Controller
     public function destroy($id)
     {
         //
-        cotizacion::destroy($id);
+        salones::destroy($id);
 
-        return redirect('cotizacion');
+        return redirect('salones');
     }
 }

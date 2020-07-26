@@ -61,6 +61,9 @@
 <label for="tipo_hab">{{'tipo_hab'}}</label>
 <input type="text" name="tipo_hab" id="tipo_hab" value="{{isset($cotizacion->tipo_hab)? $cotizacion->tipo_hab:'' }}">
 <br>
+<label for="tipo_salon">{{'tipo_salon'}}</label>
+<input type="text" name="tipo_salon" id="tipo_salon" value="{{isset($cotizacion->tipo_salon)? $cotizacion->tipo_salon:'' }}">
+<br>
 <label for="Fecha_E">{{'Fecha_E'}}</label>
 <input type="date" name="Fecha_E" id="Fecha_E" value="{{isset($cotizacion->Fecha_E)? $cotizacion->Fecha_E:'' }}">
 <br>

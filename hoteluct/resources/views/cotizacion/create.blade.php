@@ -78,11 +78,26 @@
 <div id="lateral">
 <label for="tipo_hab">tipo_hab</label>
 <select id="tipo_hab" class="form-control" name="tipo_hab">
+    <option>Ninguna</option>
     <option>Junior Suite</option>  
     <option>Superior King</option>
     <option>Superior Twin</option>
     <option>Standard King</option>
     <option>Standard Twin</option>
+    </select>
+</div>
+</fieldset>
+<br>
+<fieldset >
+<div id="lateral">
+<label for="tipo_salon">{{'tipo_salon'}}</label>
+<select id="tipo_salon" class="form-control" name="tipo_salon">
+    <option>Ninguna</option>
+    <option>Matrimonio</option>  
+    <option>Seminario</option>
+    <option>Reunion</option>
+    <option>Cumpleaños</option>
+    <option>Graduaciones</option>
     </select>
 </div>
 </fieldset>

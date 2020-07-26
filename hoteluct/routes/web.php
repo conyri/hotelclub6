@@ -55,6 +55,7 @@ Route::get('/cinco', function () {
 });
 Route::resource('reservasa', 'reservasaController');
 Route::resource('cotizacion', 'cotizacionController');
+Route::resource('salones', 'salonesController');
 
 Route::group(['middleware' => ['role:cliente']], function () {
     

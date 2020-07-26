@@ -13,6 +13,7 @@ class cotizacion extends Model
         'apellido',
         'correo',
         'tipo_hab',
+        'tipo_salon',
         'Fecha_E',
         'Fecha_S',
         'cant_per',
