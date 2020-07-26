@@ -51,16 +51,6 @@ class reserva2Controller extends Controller
     }
 
 
-    public function buscar()
-{
-     
-
- 
-$data = DB::table('reserva')->select('id')->take(1)->get();
-
-      //aquí puedes pasar la información que necesites dentro de un array yo uso compac porque me gusta :-)  
-     return View::make('reservaclient.index', compact('data') );
-}
     /**
      * Display the specified resource.
      *

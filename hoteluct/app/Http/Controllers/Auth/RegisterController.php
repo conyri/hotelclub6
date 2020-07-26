@@ -69,6 +69,7 @@ class RegisterController extends Controller
             'rut' => $data['rut'],
             'fono' => $data['fono'],
             'direc' => $data['direc'],
+            'apellido' => $data['apellido'],
             'password' => Hash::make($data['password']),
         ]);
         $user->assignRole('cliente');

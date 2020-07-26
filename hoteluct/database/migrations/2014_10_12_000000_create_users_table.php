@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('rut');
             $table->string('fono');
             $table->string('direc');
+            $table->string('apellido');
 
             $table->rememberToken();
             $table->timestamps();

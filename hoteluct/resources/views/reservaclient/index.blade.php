@@ -25,64 +25,27 @@
 <div class="uper"> 
 <h1>Reservas</h1>
 
-
-
-<table class="table table-info table-bordered">
-
-    <thead class="thead-dark">
-        <tr>
-            <th>#</th>
-            <th>RUT CLIENTE</th>
-            <th>N° de HABITACION</th>
-            <th>FECHA DE ENTRADA</th>
-            <th>FECHA DE SALIDA</th>
-            <th>TOTAL DIAS</th>
-            <th>SERVICIOS</th>
-            <th>COSTO POR DIA</th>
-            <th>COSTO TOTAL</th>
-            <th>DESCUENTO</th>
-            <th>COSTOBRUTO</th>
-            <th colspan="4" width= 5%  ><h5 class= "display-6">ACCION</h5></th>
-            
-
-        </tr>
-    </thead>
-
-    <tbody>
+<label for="reserva">{{'Rut cliente'}}</label>
+<input type="text" name="Rut_client" id="reserva">
+<input type="submit"  value="{{isset($reserva->Rut_client)? $reserva->Rut_client:'' }}" class="btn btn-success mt-0 ml-0" role="button">
+    
     @foreach($reserva as $rev)
-        <tr>
-            <td>{{$loop->iteration}}</td>
-            <td>{{$rev->Rut_client}}</td>
-            <td>{{$rev->N_hab}}</td>
-            <td>{{$rev->fecha_E}}</td>
-            <td>{{$rev->fecha_S}}</td>
-            <td>{{$rev->total_dias}}</td>
-            <td>{{$rev->servicios}}</td>
-            <td>{{$rev->costo_dia}}</td>
-            <td>{{$rev->costo_total}}</td>
-            <td>{{$rev->descuento}}</td>
-            <td>{{$rev->costobruto}}</td>
-            <td>
+        
             
-            <a href="{{url('/reserva/'.$rev->id.'/edit')}}" class="btn btn-success mt-0 ml-0">
-            Editar</a>
-                
+        <h1 >{{$rev['Rut_client']}},valor {{$rev['costobruto']}}</h1>
+            
+            
             
                 
-            <form method="post" action="{{url('/reserva/'.$rev->id)}}">
-            {{csrf_field()}}
-            {{method_field('DELETE') }}
-            <button class="btn btn-danger" type="submit" onclick="return confirm('¿Borrar?');">Borrar</button>
-            </form>
-            </td>
-        </tr>
+    
+    
     @endforeach
-    </tbody>
+ 
 
 
 
 
-</table>
+
 
 
 <a href="{{ url ('reserva2/create')}}" type="button" class="btn btn-success mt-0 ml-0">AGREGAR</a>
