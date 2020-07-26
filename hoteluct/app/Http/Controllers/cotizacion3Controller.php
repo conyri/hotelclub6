@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\cotizacion;
+use App\habitaciones;
 use Illuminate\Http\Request;
 
 class cotizacion3Controller extends Controller
@@ -14,6 +15,9 @@ class cotizacion3Controller extends Controller
     public function index()
     {
         //
+        $datos['cotizacion']=cotizacion::all();
+
+        return view('cotizacionclient.index',$datos);
     }
 
     /**
@@ -24,6 +28,8 @@ class cotizacion3Controller extends Controller
     public function create()
     {
         //
+        $habitaciones=habitaciones::all();
+        return view('cotizacion.create',compact('habitaciones'));
     }
 
     /**
@@ -46,6 +52,13 @@ class cotizacion3Controller extends Controller
     public function show($id)
     {
         //
+        $datoscotizacion=request()-> except('_token');
+
+        cotizacion::insert($datoscotizacion);
+
+        //return response()->json($datoshabitaciones);
+        
+        return redirect('coti2')->with("message","Registrado!");
     }
 
     /**
