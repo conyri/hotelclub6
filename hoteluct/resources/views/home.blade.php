@@ -38,10 +38,18 @@
         <div class="col-md-10">
             <div class="card">
                 <div class="card-header">Home</div>
-                <a href="/principaladmin" class="button" >Panel ADM</a>
+                @role('admin')
 
-               
-                    
+                <a href="/principaladmin" class="button" >Panel ADM</a>
+                <div class="card-body">
+                    <h4>Bienvenid@  {{ auth()->user()->name }} </h4>
+                    </div>
+
+
+                @else
+  
+
+                  
                     <div class="card-body">
                     <h4>Bienvenid@  {{ auth()->user()->name }} </h4>
                     </div>
@@ -64,6 +72,8 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>
+@endrole
 @endsection
