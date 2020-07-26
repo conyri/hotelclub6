@@ -116,7 +116,8 @@
             <div class="links flex-center top-right ">                                                            
                 <a href="/restaurant">RESTAURANT</a> 
                 <a href="/habitacion">HABITACIONES</a>  
-                <a href="/fitnessclub">SERVICIOS</a>           
+                <a href="/fitnessclub">SERVICIOS</a>
+                <a href="/">INICIO</a>           
             </div>  
             <table class="egt">
                 <tr>

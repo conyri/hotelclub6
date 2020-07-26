@@ -119,7 +119,8 @@
             <div class="links flex-center top-right ">                                                            
                 <a href="/restaurant">RESTAURANT</a> 
                 <a href="/eventos">EVENTOS Y SALONES</a>  
-                <a href="/fitnessclub">SERVICIOS</a>         
+                <a href="/fitnessclub">SERVICIOS</a> 
+                <a href="/">INICIO</a>        
             </div>
             <strong><font color="black" size="4px" align="center" > <h1 >Hermosas habitaciones y suites amuebladas</h1> </font></strong>
 

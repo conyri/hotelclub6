@@ -54,8 +54,7 @@
                 <div class="links flex-center ">   
 
                 
-                <a href="/reserva2" class="btn btn-primary">RESERVA</a> 
-                <a href="/coti2" class="btn btn-primary">COTIZACION</a>  
+                  
 
                        
             </div> 

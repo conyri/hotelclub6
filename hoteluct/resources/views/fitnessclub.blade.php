@@ -92,7 +92,8 @@
             <div class="links flex-center top-right ">                                                            
                 <a href="/restaurant">RESTAURANT</a> 
                 <a href="/eventos">EVENTOS Y SALONES</a>  
-                <a href="/habitacion">HABITACIONES</a>             
+                <a href="/habitacion">HABITACIONES</a> 
+                <a href="/">INICIO</a>            
             </div>    
         
             <table class="egt">

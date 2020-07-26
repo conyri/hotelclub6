@@ -116,7 +116,8 @@
                 <a href="/est_resv">ESTADO DE RESERVAS</a>  
                 <a href="/habitaciones">HABITACIONES</a> 
                 <a href="/servicio">SERVICIOS</a>
-                <a href="/reserva">RESERVA</a>           
+                <a href="/reserva">RESERVA</a> 
+                <a href="/home">HOME</a>          
             </div>    
         
     </body>
