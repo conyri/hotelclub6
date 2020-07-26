@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <!doctype html>
 <html lang="en">
   <head>
@@ -53,13 +56,13 @@
 
 <fieldset>
 <label for="Rut">{{'Rut'}}</label>
-<input type="text" name="Rut" id="Rut" value="">
+<input type="text" disabled="disabled" name="Rut" id="Rut" value="{{ auth()->user()->rut }}">
 </fieldset>
 <br>
 
 <fieldset>
 <label for="nombre">{{'nombre'}}</label>
-<input type="text" name="nombre" id="nombre" value="">
+<input type="text" disabled="disabled" name="nombre" id="nombre" value="{{ auth()->user()->name }}">
 </fieldset>
 <br>
 
@@ -115,3 +118,4 @@
 </div>
 </body>
 </html>
+@endsection
