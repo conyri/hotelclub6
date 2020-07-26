@@ -116,8 +116,7 @@
             <div class="links flex-center top-right ">                                                            
                 <a href="/habitacion">HABITACIONES</a> 
                 <a href="/eventos">EVENTOS Y SALONES</a>  
-                <a href="/fitnessclub">SERVICIOS</a> 
-                <a href="/">INICIO</a>           
+                <a href="/fitnessclub">SERVICIOS</a>            
             </div>
 
             <table class="egt">
@@ -127,7 +126,6 @@
                 <tr>
                 <td><font color="black" ><p ><h1>Restaurant Bristol</h1> <br>Ven y disfruta lo mejor de nuestra tierra en el mejor<br> 
                 restaurante de cocina chilena moderna de Santiago.​ </p></font>
-                 <a href="/" class="button" >  MAS INFORMACION </a>
                  </td>
                 </tr>
                 <tr>
@@ -140,7 +138,6 @@
                 <tr>
                 <td><font color="black" ><p ><h1>Bar ​Bristol</h1> <br>Un lugar en Santiago donde encontrarás la mejor <br>
                 coctelería de autor música en vivo y más.​ </p></font>
-                 <a href="/" class="button" >  MAS INFORMACION </a>
                  </td>
                 </tr>
                 <tr>
