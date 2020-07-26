@@ -25,10 +25,8 @@ class LoginController extends Controller
      *
      * @var string
      */
-    if (User=="cliente"){
-    protected $redirectTo = '/home'; }
-    else 
-    protected $redirectTo = '/principaladmin';
+    
+    protected $redirectTo = '/home';
 
     /**
      * Create a new controller instance.
@@ -41,13 +39,9 @@ class LoginController extends Controller
         #$this->middleware('auth');
     }
 
-<<<<<<< Updated upstream
     public function logout()
     {
              Auth::logout();
     
     }
-=======
- 
->>>>>>> Stashed changes
 }
