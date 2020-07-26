@@ -21,6 +21,7 @@ Route::get('/' , function () { return view('welcome'); });
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/logout', ['uses' => 'AuthController@doLogout', 'before' => 'auth']);
 
 Route::get('/habitacion', function () {
     return view('habitacion');
@@ -53,6 +54,7 @@ Route::get('/cinco', function () {
     return view('cinco');
 });
 Route::resource('reservasa', 'reservasaController');
+Route::resource('cotizacion', 'cotizacionController');
 
 Route::group(['middleware' => ['role:cliente']], function () {
     
@@ -74,7 +76,6 @@ Route::group(['middleware' => ['role:admin']], function () {
 
 
 Route::resource('habitaciones', 'habitacionesController');
-Route::resource('cotizacion', 'cotizacionController');
 Route::resource('est_resv', 'esta_resvsController');
 Route::resource('servicio', 'serviciosController');
 Route::resource('reserva', 'reservaController');

@@ -19,11 +19,11 @@
                 margin: 0;
             }
             </style>
-    <title>Reservas</title>
+    <title>Reservas de salones</title>
   </head>
 <body>
 <div class="uper"> 
-<h1>Reservas</h1>
+<h1>Reservas de salones</h1>
 
 
 
