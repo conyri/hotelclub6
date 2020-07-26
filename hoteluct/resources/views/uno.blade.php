@@ -151,7 +151,7 @@
                 <br>    ⦁ Radio reloj
                 <br>    ⦁ Secador de cabello
                 </p></font>
-                <a href="/cotizacion/create" class="button" >  COTIZAR </a>
+                <a href="cotizacion3/create" class="button" >  COTIZAR </a>
                 <a href="/" class="button">INICIO</a>
                 </td>
                 </tr>

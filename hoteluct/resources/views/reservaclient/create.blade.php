@@ -1,4 +1,6 @@
+@extends('layouts.app')
 
+@section('content')
 <!doctype html>
 <html lang="en">
   <head>
@@ -177,3 +179,5 @@ costo bruto incluye el valor de los servicios adicionales que quiere agregar per
 </div>
 </body>
 </html>
+
+@endsection

@@ -127,11 +127,11 @@
                 <tr>
                 <td><font color="black" ><p ><h1>Junior Suite</h1> <br>La suite premium reúne espacio, lujo y elegancia
                  para crear un verdadero oasis <br> urbano de baño exquisito </p></font>
-                 <a href="/uno" class="button" >  DETALLES </a>
+                 <a href="/paginaslog/uno2" class="button" >  DETALLES </a>
                  </td>
                 <td><font color="black" ><p ><h1>Superior King</h1> <br> Las habitaciones Superior King poseen una cama extra 
                 grande, cálidos detalles en <br> madera  y un lujoso cuarto de baño de mármol.</p></font>
-                <a href="/dos" class="button" >  DETALLES </a>
+                <a href="/paginaslog/dos2" class="button" >  DETALLES </a>
                 </td>
                 </tr>
                 <tr>
@@ -147,12 +147,12 @@
                 <td><font color="black" ><p ><h1>Superior Twin</h1> <br>Cada habitación Superior Twin acondicionada de manera perfecta
                  con los cálidos <br> detalles  de madera ofrece una sensibilidad contemporánea mediante comodidades<br> modernas  como Wi-Fi 
                  gratuito, televisor de pantalla plana, mini bar y un cuarto <br>de baño  exquisito con ducha con mampara de vidrio. </p></font>
-                 <a href="/tres" class="button" >  DETALLES </a>
+                 <a href="/paginaslog/tres2" class="button" >  DETALLES </a>
                  </td>
                 <td><font color="black" ><p ><h1>Standard King</h1> <br>Las habitaciones Standard King han sido diseñadas para ser 
                 santuarios <br> de paz y relajación con una cama doble extra grande, dos cómodas <br> sillas de estilo inglés   y 
                 un cuarto de baño exquisito.</p></font>
-                <a href="/cuatro" class="button" >  DETALLES </a>
+                <a href="/paginaslog/cuatro2" class="button" >  DETALLES </a>
                 </td>
                 </tr>
                 <tr>
@@ -167,7 +167,7 @@
                  habitaciones <br> Standard Twin combinan la sofisticación clásica y el lujo moderno. Dos <br>camas extra 
                  grandes, un cuarto de baño hermoso <br> con ducha con mampara de vidrio y detalles interiores elegantes
                  conforman<br> el retiro ideal luego de un día de viaje, reuniones y paseos por Santiago..</p></font>
-                <a href="/cinco" class="button" >  DETALLES </a></td>
+                <a href="/paginaslog/cinco2" class="button" >  DETALLES </a></td>
                 </tr>
                 <tr>
                 <td>  <br><br> </td>

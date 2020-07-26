@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -151,7 +154,7 @@
                 <br>    ⦁ Radio reloj
                 <br>    ⦁ Secador de cabello
                 </p></font>
-                <a href="/coti2/create" class="button" >  COTIZAR </a>
+                <a href="/reserva2/create" class="button" > RESERVAR </a>
                 <a href="/" class="button">INICIO</a>
                 </td>
                 </tr>
@@ -166,3 +169,5 @@
     </body>
 
 
+
+    @endsection

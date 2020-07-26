@@ -53,7 +53,7 @@ Route::get('/cinco', function () {
     return view('cinco');
 });
 Route::resource('reservasa', 'reservasaController');
-Route::resource('cotizacion', 'cotizacionController');
+Route::resource('cotizacion3', 'cotizacion3Controller');
 Route::resource('salones', 'salonesController');
 Route::resource('servicios2', 'servicio2Controller');
 
@@ -62,6 +62,7 @@ Route::group(['middleware' => ['role:cliente']], function () {
     Route::get('/paginaslog/welcome2' , function () { return view('/paginaslog/welcome2'); });
     Route::resource('reserva2', 'reserva2Controller');
     Route::resource('coti2', 'cotizacion2Controller');
+    Route::resource('reservaclient', 'cotizacion2Controller');
     Route::get('/paginaslog/habitacion2', function () {
         return view('/paginaslog/habitacion2');
     });
@@ -107,6 +108,7 @@ Route::resource('habitaciones', 'habitacionesController');
 Route::resource('est_resv', 'esta_resvsController');
 Route::resource('servicio', 'serviciosController');
 Route::resource('reserva', 'reservaController');
+Route::resource('cotizacion', 'cotizacionController');
 
 
 

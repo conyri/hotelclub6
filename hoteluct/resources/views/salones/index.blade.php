@@ -56,8 +56,7 @@
 
 </table>
 
-<a href="{{ url ('est_resv/create')}}" type="button" class="btn btn-success mt-0 ml-0">AGREGAR</a>
-<a class="btn btn-primary" href="/cotizacion/create" role="button">COTIZAR SALON</a>
+<a class="btn btn-primary" href="/cotizacion3/create" role="button">COTIZAR SALON</a>
 <a class="btn btn-primary" href="/eventos" role="button">ATRAS</a>
 </div> 
 </body>

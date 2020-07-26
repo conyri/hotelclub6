@@ -17,7 +17,7 @@ class cotizacion3Controller extends Controller
         //
         $datos['cotizacion']=cotizacion::all();
 
-        return view('cotizacionclient.index',$datos);
+        return view('cotizacion3.index',$datos);
     }
 
     /**
@@ -29,7 +29,7 @@ class cotizacion3Controller extends Controller
     {
         //
         $habitaciones=habitaciones::all();
-        return view('cotizacion.create',compact('habitaciones'));
+        return view('cotizacion3.create',compact('habitaciones'));
     }
 
     /**
@@ -58,7 +58,7 @@ class cotizacion3Controller extends Controller
 
         //return response()->json($datoshabitaciones);
         
-        return redirect('coti2')->with("message","Registrado!");
+        return redirect('/habitacion')->with("message","Registrado!");
     }
 
     /**
