@@ -106,7 +106,7 @@
                 <a href="/paginaslog/restaurant2">RESTAURANT</a> 
                 <a href="/paginaslog/eventos2">EVENTOS Y SALONES</a>  
                 <a href="paginaslog/fitnessclub2">SERVICIOS</a> 
-                <a href="home">PERFIL</a>         
+                <a href="/home">PERFIL</a>         
             </div>    
         
     </body>

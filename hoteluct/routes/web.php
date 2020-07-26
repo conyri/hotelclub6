@@ -71,11 +71,9 @@ Route::group(['middleware' => ['role:cliente']], function () {
     Route::get('/paginaslog/fitnessclub2', function () {
         return view('/paginaslog/fitnessclub2');
     });
-    
     Route::get('/paginaslog/restaurant2', function () {
         return view('/paginaslog/restaurant2');
     });
-    
     Route::get('/paginaslog/uno2', function () {
         return view('/paginaslog/uno2');
     });
