@@ -17,8 +17,8 @@
             html, body {
                 background: url("/imagenes/u0.jpg");
                 background-size: cover ;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
+                color: white;
+                font-family: 'comic sans', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
@@ -92,7 +92,12 @@
         <div class=" full-height flex-center">     
         </div>
         
-        
+        @role('admin')
+
+                <div class="card-body">
+                    <h4 >Bienvenid@  {{ auth()->user()->name }} </h4>
+                    </div>
+                    @endrole
         <br>
         <br>
         <br>
