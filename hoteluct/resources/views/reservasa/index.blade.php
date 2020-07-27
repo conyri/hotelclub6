@@ -25,61 +25,13 @@
 <div class="uper"> 
 <h1>Reservas de salones</h1>
 
+<td><img width="500" height="400" src="/imagenes/salon.jpg"/></td>
+<td><img width="500" height="400" src="/imagenes/salon2.jpg"  /></td>
 
-
-<table class="table table-info table-bordered">
-
-    <thead class="thead-dark">
-        <tr>
-            <th>#</th>
-            <th>RUT CLIENTE</th>
-            <th>TIPO DE SALON</th>
-            <th>FECHA DE ENTRADA</th>
-            <th>FECHA DE SALIDA</th>
-            <th>TOTAL DIAS</th>
-            <th>COSTO POR DIA</th>
-            <th>COSTO TOTAL</th>
-            <th colspan="4" width= 5%  ><h5 class= "display-6">ACCION</h5></th>
-            
-
-        </tr>
-    </thead>
-
-    <tbody>
-    @foreach($reservasa as $rev)
-        <tr>
-            <td>{{$loop->iteration}}</td>
-            <td>{{$rev->rut_client}}</td>
-            <td>{{$rev->tipo_Salon}}</td>
-            <td>{{$rev->fecha_E}}</td>
-            <td>{{$rev->fecha_S}}</td>
-            <td>{{$rev->dias_total}}</td>
-            <td>{{$rev->valor_dia}}</td>
-            <td>{{$rev->coto_total}}</td>
-            <td>
-            
-            <a href="{{url('/reservasa/'.$rev->id.'/edit')}}" class="btn btn-success mt-0 ml-0">
-            Editar</a>
-                
-            
-                
-            <form method="post" action="{{url('/reservasa/'.$rev->id)}}">
-            {{csrf_field()}}
-            {{method_field('DELETE') }}
-            <button class="btn btn-danger" type="submit" onclick="return confirm('¿Borrar?');">Borrar</button>
-            </form>
-            </td>
-        </tr>
-    @endforeach
-    </tbody>
-
-
-
-
-</table>
+<br>
 <a href="{{ url ('reservasa/create')}}" type="button" class="btn btn-success mt-0 ml-0">AGREGAR</a>
 
-<a class="btn btn-primary" href="/principaladmin" role="button">ATRAS</a>
+<a class="btn btn-primary" href="/home" role="button">ATRAS</a>
 </div> 
 </body>
 </html>

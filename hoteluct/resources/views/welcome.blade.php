@@ -38,7 +38,7 @@
 
             .top-right {
                 position: absolute;
-                right: 10px;
+                right: 100px;
                 top: 18px;
                 text-decoration: none;
             }
@@ -84,9 +84,7 @@
         </style>
     </head>
     <body>
-        <div class="top-right1 ">
-        <a href="/principaladmin" >Panel ADM</a>
-        </div>
+        
         
         <div class=" full-height flex-center">
             @if (Route::has('login'))

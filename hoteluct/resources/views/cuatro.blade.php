@@ -9,7 +9,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <!-- Styles -->
-        <img src="/imagenes/u0.jpg"  width="1518" height="500" />
+        <img src="/imagenes/u0.jpg"  width="100%" height="500" />
         <style>
             html, body {
                 background-color: #E9D886;
@@ -34,12 +34,12 @@
             .position-ref {
                 position: absolute;
                 top: 100px;
-                right: 400px;
+                right: 200px;
             }
 
             .top-right {
                 position: absolute;
-                right: 210px;
+                right: 100px;
                 top: 380px;
             }
 
@@ -105,17 +105,14 @@
                 font: bold 20px Arial;
                 position: absolute;
                 top: 300px;
-                right:650px;
+                right:500px;
                 color: #FFFFFF
             }
 
         </style>
     </head>
     <body>
-    <div class="uper">
-        <a href="/habitacion" class="btn btn-primary">  ATRAS </a> 
-    </div>   
-
+   
         <div class="content full-height position-ref">                 
             <h1>HOTEL CLUB UCT</h1>               
         </div> 
@@ -148,7 +145,7 @@
                 <br>    ⦁ Radio reloj
                 <br>    ⦁ Secador de cabello
                 </p></font>
-                <a href="cotizacion3/create" class="button" >  COTIZAR </a>
+                <a href="coti2/create" class="button" >  COTIZAR </a>
                 <a href="/" class="button">INICIO</a>
                 </td>
                 </tr>

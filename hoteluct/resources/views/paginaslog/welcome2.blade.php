@@ -92,12 +92,12 @@
         <div class=" full-height flex-center">     
         </div>
         
-        @role('admin')
+       
 
                 <div class="card-body">
                     <h4 >Bienvenid@  {{ auth()->user()->name }} </h4>
                     </div>
-                    @endrole
+                   
         <br>
         <br>
         <br>

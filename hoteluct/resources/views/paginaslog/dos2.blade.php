@@ -13,7 +13,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <!-- Styles -->
-        <img src="/imagenes/u0.jpg"  width="1518" height="500" />
+        <img src="/imagenes/u0.jpg"  width="100%" height="500" />
         <style>
             html, body {
                 background-color: #E9D886;
@@ -38,15 +38,14 @@
             .position-ref {
                 position: absolute;
                 top: 100px;
-                right: 400px;
+                right: 200px;
             }
 
             .top-right {
                 position: absolute;
-                right: 210px;
+                right: 100px;
                 top: 380px;
             }
-
             .content {
                 text-align: center;
                 font-size: 50px;
@@ -108,7 +107,7 @@
                 font: bold 20px Arial;
                 position: absolute;
                 top: 300px;
-                right:650px;
+                right:550px;
                 color: #FFFFFF
             }
 

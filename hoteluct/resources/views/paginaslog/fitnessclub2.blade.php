@@ -12,7 +12,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <!-- Styles -->
-        <img src="/imagenes/u0.jpg"  width="1518" height="500" />
+        <img src="/imagenes/u0.jpg"  width="100%" height="400" />
         <style>
             html, body {
                 background-color: #DCF0FF;
@@ -36,14 +36,14 @@
 
             .position-ref {
                 position: absolute;
-                top: 100px;
-                right: 400px;
+                top: 200px;
+                right: 460px;
             }
 
             .top-right {
                 position: absolute;
-                right: 350px;
-                top: 380px;
+                right: 200px;
+                top: 300px;
             }
 
             .content {

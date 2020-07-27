@@ -25,24 +25,10 @@
 <div class="uper"> 
 <h1>Reservas</h1>
 
-<label for="reserva">{{'Rut cliente'}}</label>
-<input type="text" name="Rut_client" id="reserva" value="{{ auth()->user()->rut }}">
-<input type="submit"  value="{{isset($reserva->Rut_client)? $reserva->Rut_client:'' }}" class="btn btn-success mt-0 ml-0" role="button">
-    
-    @foreach($reserva as $rev)
-        
-            
-        <h1 >{{$rev['Rut_client']}},valor {{$rev['costobruto']}}</h1>
-            
-            
-            
-                
-    
-    
-    @endforeach
- 
+<label for="reserva"><h1 >{{'Rut cliente'}}</h1 ></label>
+<label ><h1 >{{ auth()->user()->rut }}</h1 ></label>
 
-
+  <br> 
 
 
 

@@ -21,11 +21,11 @@
                 margin: 0;
             }
             </style>
-    <title>Estado</title>
+    <title>Salones</title>
   </head>
 <body>
 <div class="uper"> 
-<h1>Estado de reserva</h1>
+<h1>Lista de Salones</h1>
 
 
 
@@ -61,7 +61,11 @@
 
 <a class="btn btn-primary" href="/cotizacion3/create" role="button">COTIZAR SALON</a>
 <a class="btn btn-primary" href="/reservasa/create" role="button">RESERVAR SALON</a>
+@role('admin')
+<a class="btn btn-primary" href="/principaladmin" role="button">ATRAS</a>
+@else
 <a class="btn btn-primary" href="/eventos" role="button">ATRAS</a>
+@endrole
 </div> 
 </body>
 </html>

@@ -9,7 +9,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <!-- Styles -->
-        <img src="/imagenes/u0.jpg"  width="1518" height="500" />
+        <img src="/imagenes/u0.jpg"  width="100%" height="500" />
         <style>
             html, body {
                 background-color: #E9D886;
@@ -27,19 +27,20 @@
 
             .flex-center {
                 align-items: center;
-                display: flex;
+                
                 justify-content: center;
+                
             }
 
             .position-ref {
                 position: absolute;
                 top: 100px;
-                right: 400px;
+                right: 200px;
             }
 
             .top-right {
                 position: absolute;
-                right: 400px;
+                right: 200px;
                 top: 380px;
             }
 
@@ -103,10 +104,7 @@
         </style>
     </head>
     <body>
-    <div class="uper">
-        <a href="/" class="btn btn-primary">  ATRAS </a> 
-    </div>   
-
+    
         <div class="content full-height position-ref">                 
             <h1>HOTEL CLUB UCT</h1>               
         </div> 
@@ -116,7 +114,8 @@
             <div class="links flex-center top-right ">                                                            
                 <a href="/restaurant">RESTAURANT</a> 
                 <a href="/habitacion">HABITACIONES</a>  
-                <a href="/fitnessclub">SERVICIOS</a>           
+                <a href="/fitnessclub">SERVICIOS</a>  
+                <a href="/">INICIO</a>          
             </div>  
             <table class="egt">
                 <tr>

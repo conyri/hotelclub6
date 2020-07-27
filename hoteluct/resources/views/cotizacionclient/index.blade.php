@@ -24,71 +24,20 @@
  <div class="uper"> 
    
 
-<font size=6>LISTADO DE COTIZACIONES</font> 
+<font size=6>COTIZACION</font> 
 @if(session()->get('success'))      
     <p class="text-right">         
         {{ session()->get('success') }}        
     </p>   
     @endif   
-
-<table class="table table-info table-bordered">
-
-    <thead class="thead-dark">
-        <tr>
-            <th >#</th>
-            <th >RUT </th>
-            <th >NOMBRE</th>
-            <th >APELLIDO</th>
-            <th > CORREO</th>
-            <th >TIPO DE HABITACION</th>
-            <th >TIPO DE SALON</th>
-            <th >FECHA DE ENTRADA</th>
-            <th >FECHA DE SALIDA</th>
-            <th >PERSONAS</th>
-            <th >ADM</th>
-                   
-           <th colspan="4" width=5% ><h1 class= "display-6">ACCION</h1></th>
-            
-
-        </tr>
-    </thead>
-
-    <tbody>
-    @foreach($cotizacion as $cot)
-        <tr>
-            <td >{{$loop->iteration}}</td>
-            <td>{{$cot->Rut}}</td>
-            <td>{{$cot->nombre}}</td>
-            <td>{{$cot->apellido}}</td>
-            <td>{{$cot->correo}}</td>
-            <td>{{$cot->tipo_hab}}</td>
-            <td>{{$cot->tipo_salon}}</td>
-            <td>{{$cot->Fecha_E}}</td>
-            <td>{{$cot->Fecha_S}}</td>
-            <td>{{$cot->cant_per}}</td>
-            <td>{{$cot->adm}}</td>
-                      
-                   
-            
-         
-            
-            <td><a href="{{url('/cotizacion/'.$cot->id.'/edit')}}" class="btn btn-success mt-0 ml-0">
-            Editar</a></td>
-                
-            <td> 
-                
-            <form method="post" action="{{url('/cotizacion/'.$cot->id)}}">
-            {{csrf_field()}}
-            {{method_field('DELETE') }}
-            <button type="submit" onclick="return confirm('¿Borrar?');" class="btn btn-danger">Borrar</button>
-            </form>
-            </td>
-        </tr>
-    @endforeach
-    </tbody>
-
-
-
+<br>
+@role('cliente')
+    <label for="cotizacion"><h1 >{{'Rut cliente'}}</h1 ></label>
+<label ><h1 >{{ auth()->user()->rut }}</h1 ></label>
+@else 
+<label ><h1 >Haz tu cotizacion!</h1 ></label>
+@endrole
+  <br> 
 
 </table>
 <a href="{{ url ('coti2/create')}}" type="button" class="btn btn-success mt-0 ml-0">AGREGAR</a>

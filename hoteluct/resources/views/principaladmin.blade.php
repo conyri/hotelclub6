@@ -83,15 +83,13 @@
         </style>
     </head>
     <body>
-        <div class="top-right1 ">
-        <a href="/paginaslog/welcome2">INICIO</a>
-        </div>
+      
         
         <div class=" full-height flex-center">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                       
                     @else
                         <a href="{{ route('login') }}">Login</a>
 

@@ -86,7 +86,7 @@
 
 <h1>Crear nueva reserva</h1>
 
-<form action="{{'/reservasa'}}" method="post" enctype="multipart/form-data" id="contact" >
+<form action="{{'/reservasa'}}" method="post" enctype="multipart/form-data"  >
 {{csrf_field()}}
 
 <div id="contact">

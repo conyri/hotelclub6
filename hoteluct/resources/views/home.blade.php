@@ -40,12 +40,46 @@
                 <div class="card-header">Home</div>
                 @role('admin')
 
-                <a href="/principaladmin" class="btn btn-info" >Panel ADM</a>
+                
                 <div class="card-body">
-                    <h4>Bienvenid@  {{ auth()->user()->name }} </h4>
+                    <h4>Bienvenid@ Recepcionista {{ auth()->user()->name }} </h4>
                     </div>
 
+                    <table class="table table-info table-bordered">
 
+<thead class="thead-dark">
+         <tr>
+        
+        <th >RUT </th>
+        <td>{{ auth()->user()->rut }}</td>
+        </tr>
+        <tr>
+        <th >NOMBRE</th>
+        <td>{{ auth()->user()->name }}</td>
+        </tr>
+        <tr>
+        <th >APELLIDO</th>
+        <td>{{ auth()->user()->apellido }}</td>
+        </tr>
+        <tr>
+        <th > CORREO</th>
+        <td>{{ auth()->user()->email }}</td>
+        </tr>
+        <tr>
+        <th >TELEFONO</th>
+        <td>{{ auth()->user()->fono }}</td>
+        </tr>
+        <tr>
+        <th >DIRECCION</th>
+        <td>{{ auth()->user()->direc }}</td>
+        </tr>      
+    </tr>
+</thead>
+
+
+
+
+</table>
                 @else
   
 
@@ -54,14 +88,12 @@
                     <h4>Bienvenid@  {{ auth()->user()->name }} </h4>
                     </div>
 
-                
+                   
 <table class="table table-info table-bordered">
 
 <thead class="thead-dark">
          <tr>
-        <th >N° DE CLIENTE</th>
-        <td >{{ auth()->user()->id}}</td>
-        </tr>
+        
         <tr>
         <th >RUT </th>
         <td>{{ auth()->user()->rut }}</td>

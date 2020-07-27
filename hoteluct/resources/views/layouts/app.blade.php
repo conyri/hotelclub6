@@ -20,9 +20,15 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-
+ 
     <div id="app" >
+
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        @role('admin')
+       
+                <a  href="/principaladmin" class="btn btn-info" >Panel ADM</a>
+                @endrole
+        @role('cliente')
             <div class="container" >
                 <a class="btn btn-success mt-0 ml-0"  href="{{ url('/paginaslog/welcome2') }}">
                     {{('HotelClub') }}
@@ -30,11 +36,9 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                @role('admin')
-
-<a  href="/principaladmin" class="btn btn-info" >Panel ADM</a>
-    
-    @endrole
+               
+                @endrole
+            
     
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">

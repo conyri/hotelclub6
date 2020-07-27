@@ -1,6 +1,3 @@
-@extends('layouts.app')
-
-@section('content')
 <!doctype html>
 <html lang="en">
   <head>
@@ -56,25 +53,25 @@
 
 <fieldset>
 <label for="Rut">{{'Rut'}}</label>
-<input type="text"  name="Rut" id="Rut" value="{{ auth()->user()->rut }}">
+<input type="text" name="Rut" id="Rut" value="">
 </fieldset>
 <br>
 
 <fieldset>
 <label for="nombre">{{'nombre'}}</label>
-<input type="text" name="nombre" id="nombre" value="{{ auth()->user()->name }}">
+<input type="text" name="nombre" id="nombre" value="">
 </fieldset>
 <br>
 
 <fieldset>
 <label for="apellido">{{'apellido'}}</label>
-<input type="text" name="apellido" id="apellido" value="{{ auth()->user()->apellido }}">
+<input type="text" name="apellido" id="apellido" value="">
 </fieldset>
 <br>
 
 <fieldset>
 <label for="correo">{{'correo'}}</label>
-<input type="email" name="correo" id="correo" value="{{ auth()->user()->email }}">
+<input type="email" name="correo" id="correo" value="">
 </fieldset>
 <br>
 <fieldset >
@@ -122,15 +119,14 @@
 <br>
 <fieldset>
 <label for="adm">{{'adm'}}</label>
-<input type="text" name="adm" id="adm" value="{{ auth()->user()->rut }}">
+<input type="text" name="adm" id="adm" value="">
 </fieldset>
 <br>
 <fieldset>
 <input type="submit" value="Enviar" class="btn btn-primary" role="button">
-<a href="{{ url ('coti2')}}" class="btn btn-primary" role="button">Regresar</a>
+<a href="{{ url ('/habitacion')}}" class="btn btn-primary" role="button">Regresar</a>
 </fieldset>
 </form>
 </div>
 </body>
 </html>
-@endsection
